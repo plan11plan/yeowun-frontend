@@ -16,7 +16,7 @@ test.describe("여운 frontend smoke", () => {
 
     await page.goto("/");
 
-    await expect(page.getByText("modi")).toBeVisible();
+    await expect(page.getByText("여운")).toBeVisible();
     await expect
       .poll(() => healthRequestCount, {
         message: "the frontend should request backend health status",
